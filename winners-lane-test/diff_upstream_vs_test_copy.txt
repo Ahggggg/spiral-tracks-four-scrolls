@@ -1,0 +1,4 @@
+7c7
+< W=/home/liam/projects/vesuvius-work; X=$W/x_recipe_erwin; S=$1; Z0=$2; Z1=$3; SENSE=$4; UMB=$5
+---
+> W=/tmp/winners-test/w; X=$W/x_recipe_erwin; S=$1; Z0=$2; Z1=$3; SENSE=$4; UMB=$5

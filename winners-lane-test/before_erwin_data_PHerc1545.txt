@@ -1,0 +1,18 @@
+DOWNLOAD FAILED https://dl.ash2txt.org/datasets/spiral_datasets/PHerc1545/20250821151648/tracks/PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks/metadata.json (/)
+DOWNLOAD FAILED https://dl.ash2txt.org/datasets/spiral_datasets/PHerc1545/20250821151648/tracks/PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks/z_bounds.i32 (/)
+DOWNLOAD FAILED https://dl.ash2txt.org/datasets/spiral_datasets/PHerc1545/20250821151648/tracks/PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks/family_codes.i8 (/)
+DOWNLOAD FAILED https://dl.ash2txt.org/datasets/spiral_datasets/PHerc1545/20250821151648/tracks/PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks/coordinates.i32 (/)
+DOWNLOAD FAILED https://dl.ash2txt.org/datasets/spiral_datasets/PHerc1545/20250821151648/tracks/PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks/arclengths.f64 (/)
+DOWNLOAD FAILED https://dl.ash2txt.org/datasets/spiral_datasets/PHerc1545/20250821151648/tracks/PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks/source_ids.u64 (/)
+DOWNLOAD FAILED https://dl.ash2txt.org/datasets/spiral_datasets/PHerc1545/20250821151648/tracks/PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks/tortuosities.f64 (/)
+DOWNLOAD FAILED https://dl.ash2txt.org/datasets/spiral_datasets/PHerc1545/20250821151648/tracks/PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks/header.bin (/)
+tracks download failed
+exit code: 1
+--- tracks folder after the run:
+total 0
+drwxr-xr-x 3 user user  60 Nov 13 22:10 .
+drwxr-xr-x 4 user user 100 Nov 13 22:10 ..
+drwxr-xr-x 2 user user  40 Nov 13 22:10 PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks
+total 0
+drwxr-xr-x 2 user user 40 Nov 13 22:10 .
+drwxr-xr-x 3 user user 60 Nov 13 22:10 ..

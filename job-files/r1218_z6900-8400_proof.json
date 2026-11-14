@@ -1,0 +1,52 @@
+{
+ "name": "r1218_z6900-8400_proof",
+ "sense": "ACW",
+ "stages": [
+  "fetch",
+  "dataset",
+  "sdt",
+  "fit",
+  "snap",
+  "flatten",
+  "ctfetch",
+  "render"
+ ],
+ "windings": "mid:3",
+ "kind": "scroll",
+ "scroll": "PHerc1218",
+ "volume": "20250521120456",
+ "voxel_um": 8.64,
+ "ct_zarr": "PHerc1218/volumes/20250521120456-8.640um-1.2m-116keV-masked.zarr",
+ "m7_zarr": "PHerc1218/representations/predictions/surfaces/20250521120456-surface-20260413222639-surface-m7-L0-th0.2.zarr",
+ "tracks": {
+  "base": "file:///workspace/fl/data/PHerc1218/tracks/",
+  "name": "PHerc1218_20250521120456_surface_m7_L0_th0.2.dbm",
+  "local": true,
+  "push": "data/first-letters-race/tracks/PHerc1218=/workspace/fl/data/PHerc1218/tracks"
+ },
+ "z": [
+  6900,
+  8400
+ ],
+ "sdt_threshold": 128,
+ "sdt_pad": 64,
+ "umbilicus": "../inputs/umbilicus_PHerc1218_drobkov.json",
+ "sdt_dir": "/workspace/fl/data/PHerc1218/sdt_z6836-8464",
+ "fit_overrides": {
+  "optimizer_num_training_steps": 30000
+ },
+ "fit_timeout_s": 6000,
+ "sdt_timeout_s": 3600,
+ "fit_gpus": 1,
+ "render": {
+  "cache_gb": 8,
+  "pull_layers": 31
+ },
+ "deadline_hours": 2.0,
+ "tf32": "default",
+ "note": "Proof run: one sense (ACW, catalogue prior), one 8,000-step fit, snap + flatten + CT fetch + render of 3 mid windings, 31-layer crops pulled. Ink is read separately, on a local machine.",
+ "fit_env": {
+  "FIT_SPIRAL_STOP_AT": 8000
+ },
+ "lasagna_group_key": "PHerc1218/representations/predictions/lasagna/20250521120456-lasagna-20260419180421"
+}

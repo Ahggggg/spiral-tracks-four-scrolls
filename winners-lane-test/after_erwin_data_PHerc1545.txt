@@ -1,0 +1,32 @@
+placeholder PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm 1292890112 65536
+no Lasagna used for PHerc1545: synthetic normals from m7 (after the m7 download)
+AWS STUB: reached the bucket downloads (s3 cp --no-sign-request --only-show-errors s3://vesuvius-challenge-open-data/PHerc1545/representations/predictions/surfaces/20250821151648-surface-20260413222639-surface-m7-L0-th0.2.zarr/.zattrs /tmp/winners-test/w/ds/m7_PHerc1545/.zattrs); stopping the test here
+exit code: 99
+--- tracks folder after the run:
+total 64
+drwxr-xr-x 3 user user         80 Nov 13 22:03 .
+drwxr-xr-x 4 user user        120 Nov 13 22:03 ..
+-rw-r--r-- 1 user user 1292890112 Nov  6 21:44 PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm
+drwxr-xr-x 2 user user        220 Nov 13 22:03 PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks
+total 1302424
+drwxr-xr-x 2 user user        220 Nov 13 22:03 .
+drwxr-xr-x 3 user user         80 Nov 13 22:03 ..
+-rw-r--r-- 1 user user   24626280 Nov 13 22:03 arclengths.f64
+-rw-r--r-- 1 user user 1207445100 Nov 13 22:03 coordinates.i32
+-rw-r--r-- 1 user user    3078285 Nov 13 22:03 family_codes.i8
+-rw-r--r-- 1 user user         64 Nov 13 22:03 header.bin
+-rw-r--r-- 1 user user        218 Nov 13 22:03 metadata.json
+-rw-r--r-- 1 user user   24626288 Nov 13 22:03 offsets.i64
+-rw-r--r-- 1 user user   24626280 Nov 13 22:03 source_ids.u64
+-rw-r--r-- 1 user user   24626280 Nov 13 22:03 tortuosities.f64
+-rw-r--r-- 1 user user   24626280 Nov 13 22:03 z_bounds.i32
+--- size check against our files:
+arclengths.f64 ours 24626280 downloaded 24626280 OK
+coordinates.i32 ours 1207445100 downloaded 1207445100 OK
+family_codes.i8 ours 3078285 downloaded 3078285 OK
+header.bin ours 64 downloaded 64 OK
+metadata.json ours 218 downloaded 218 OK
+offsets.i64 ours 24626288 downloaded 24626288 OK
+source_ids.u64 ours 24626280 downloaded 24626280 OK
+tortuosities.f64 ours 24626280 downloaded 24626280 OK
+z_bounds.i32 ours 24626280 downloaded 24626280 OK

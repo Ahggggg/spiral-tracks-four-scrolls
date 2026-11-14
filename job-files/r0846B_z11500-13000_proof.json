@@ -1,0 +1,53 @@
+{
+ "name": "r0846B_z11500-13000_proof",
+ "sense": "ACW",
+ "stages": [
+  "fetch",
+  "dataset",
+  "sdt",
+  "fit",
+  "snap",
+  "flatten",
+  "ctfetch",
+  "render"
+ ],
+ "windings": "mid:3",
+ "kind": "scroll",
+ "scroll": "PHerc0846B",
+ "volume": "20250804142305",
+ "voxel_um": 9.362,
+ "ct_zarr": "PHerc0846B/volumes/20250804142305-9.362um-1.2m-113keV-masked.zarr",
+ "m7_zarr": "PHerc0846B/representations/predictions/surfaces/20250804142305-surface-20260413222639-surface-m7-L0-th0.2.zarr",
+ "tracks": {
+  "base": "file:///workspace/fl/data/PHerc0846B/tracks/",
+  "name": "PHerc0846B_20250804142305_surface_m7_L0_th0.2.dbm",
+  "local": true,
+  "push": "data/first-letters-race/tracks/PHerc0846B=/workspace/fl/data/PHerc0846B/tracks"
+ },
+ "z": [
+  11500,
+  13000
+ ],
+ "sdt_threshold": 128,
+ "sdt_pad": 64,
+ "umbilicus": "../inputs/umbilicus_PHerc0846B_ngrid.json",
+ "sdt_dir": "/workspace/fl/data/PHerc0846B/sdt_z11436-13064",
+ "fit_overrides": {
+  "optimizer_num_training_steps": 30000
+ },
+ "fit_timeout_s": 6000,
+ "sdt_timeout_s": 3600,
+ "fit_gpus": 1,
+ "render": {
+  "cache_gb": 8,
+  "pull_layers": 31
+ },
+ "deadline_hours": 2.0,
+ "tf32": "default",
+ "note": "Proof run: one sense (ACW, catalogue prior), one 8,000-step fit, snap + flatten + CT fetch + render of 3 mid windings, 31-layer crops pulled. Ink is read separately, on a local machine.",
+ "fit_env": {
+  "FIT_SPIRAL_STOP_AT": 8000
+ },
+ "normals": "synthetic",
+ "normals_source": "make on pod (make_normals.py from the m7 level-1 mirror)"
+}

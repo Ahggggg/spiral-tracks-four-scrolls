@@ -1,0 +1,4 @@
+15c15
+< T=https://dl.ash2txt.org/datasets/spiral_datasets/$S/$VID/tracks; P=${S}_${VID}_surface_m7_L0_th0.2
+---
+> T=${TRACKS_BASE:-https://dl.ash2txt.org/datasets/spiral_datasets}/$S/$VID/tracks; P=${S}_${VID}_surface_m7_L0_th0.2

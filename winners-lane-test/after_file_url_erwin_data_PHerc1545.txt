@@ -1,0 +1,16 @@
+placeholder PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm 1292890112 1292890112
+no Lasagna used for PHerc1545: synthetic normals from m7 (after the m7 download)
+AWS STUB: reached the bucket downloads (s3 cp --no-sign-request --only-show-errors s3://vesuvius-challenge-open-data/PHerc1545/representations/predictions/surfaces/20250821151648-surface-20260413222639-surface-m7-L0-th0.2.zarr/.zattrs /tmp/winners-test/w/ds/m7_PHerc1545/.zattrs); stopping the test here
+exit code: 99
+--- size check against our files:
+arclengths.f64 ours 24626280 fetched 24626280 OK
+coordinates.i32 ours 1207445100 fetched 1207445100 OK
+family_codes.i8 ours 3078285 fetched 3078285 OK
+header.bin ours 64 fetched 64 OK
+metadata.json ours 218 fetched 218 OK
+offsets.i64 ours 24626288 fetched 24626288 OK
+source_ids.u64 ours 24626280 fetched 24626280 OK
+tortuosities.f64 ours 24626280 fetched 24626280 OK
+z_bounds.i32 ours 24626280 fetched 24626280 OK
+-rw-r--r-- 1 user user 1292890112 Nov  6 21:44 /tmp/winners-test/w/ds/PHerc1545/tracks/PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm
+dbm head equal
