@@ -10,6 +10,10 @@ for PHerc. 1545, z 5300-6800, tracks stage only.
   arrive at the published sizes and the first 64 KiB of the `.dbm` is read with a Range request.
 - `after_file_url_erwin_data_PHerc1545.txt`: the same, with `TRACKS_BASE=file:///...` pointing at a folder.
 
+- `real_release_fetch_and_erwin_data_PHerc1545.txt` (2026-11-15, after publishing): `fetch_tracks.sh` from this repository against the
+  real release, SHA-256 of the ten fetched files against `SHA256SUMS.txt`, then the script from the pull request branch with
+  `TRACKS_BASE=file://` on that folder. Same two test-only edits as below.
+
 Two test-only edits, not part of the proposed change: the script's hard-coded work directory was pointed at a scratch folder
 (`diff_upstream_vs_test_copy.txt`), and the `aws` command was replaced by a stub that stops the run when the script reaches the
 bucket downloads (lasagna, m7, CT). Because the stub answers the script's first bucket listing with nothing, the script prints

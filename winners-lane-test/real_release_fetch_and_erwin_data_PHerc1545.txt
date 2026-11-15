@@ -1,0 +1,62 @@
+=== 2026-11-15T19:54:51Z test of the published release: https://github.com/Ahggggg/spiral-tracks-four-scrolls/releases/download/v1
+winners' script: PR branch commit aa2de5b erwin_data.sh: read tracks from TRACKS_BASE when it is set
+--- 1. bash fetch_tracks.sh https://github.com/Ahggggg/spiral-tracks-four-scrolls/releases/download/v1 PHerc1545 /data/spiral_tracks
+ok PHerc1545__vctracks__arclengths.f64 24626280
+ok PHerc1545__vctracks__coordinates.i32 1207445100
+ok PHerc1545__vctracks__family_codes.i8 3078285
+ok PHerc1545__vctracks__header.bin 64
+ok PHerc1545__vctracks__metadata.json 218
+ok PHerc1545__vctracks__offsets.i64 24626288
+ok PHerc1545__vctracks__source_ids.u64 24626280
+ok PHerc1545__vctracks__tortuosities.f64 24626280
+ok PHerc1545__vctracks__z_bounds.i32 24626280
+ok PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm 1292890112
+source file time restored: PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm 1292890112
+TRACKS_OK /data/spiral_tracks/PHerc1545/20250821151648/tracks
+fetch_tracks.sh exit code: 0  (70 s, 2626545187 bytes)
+--- 2. SHA-256 against SHA256SUMS.txt
+OK   PHerc1545__vctracks__arclengths.f64
+OK   PHerc1545__vctracks__coordinates.i32
+OK   PHerc1545__vctracks__family_codes.i8
+OK   PHerc1545__vctracks__header.bin
+OK   PHerc1545__vctracks__metadata.json
+OK   PHerc1545__vctracks__offsets.i64
+OK   PHerc1545__vctracks__source_ids.u64
+OK   PHerc1545__vctracks__tortuosities.f64
+OK   PHerc1545__vctracks__z_bounds.i32
+OK   PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm
+sha256: 10 files checked, all match
+--- 3. TRACKS_BASE=file:///data/spiral_tracks bash erwin_data.sh PHerc1545 5300 6800 ACW umbilicus_PHerc1545_drobkov.json   (tracks stage; aws stubbed)
+placeholder PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm 1292890112 1292890112
+no Lasagna used for PHerc1545: synthetic normals from m7 (after the m7 download)
+AWS STUB: reached the bucket downloads (s3 cp --no-sign-request --only-show-errors s3://vesuvius-challenge-open-data/PHerc1545/representations/predictions/surfaces/20250821151648-surface-20260413222639-surface-m7-L0-th0.2.zarr/.zattrs /scratch/w/ds/m7_PHerc1545/.zattrs); stopping the test here
+erwin_data.sh exit code: 99 (99 = the test stub stopped it at the bucket downloads, after the tracks stage)
+--- tracks folder the script built:
+total 1262588
+drwxr-xr-x 3 user user         80 Nov 15 14:56 .
+drwxr-xr-x 4 user user        120 Nov 15 14:56 ..
+-rw-r--r-- 1 user user 1292890112 Nov  6 21:44 PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm
+drwxr-xr-x 2 user user        220 Nov 15 14:56 PHerc1545_20250821151648_surface_m7_L0_th0.2.dbm.vctracks
+total 1302424
+drwxr-xr-x 2 user user        220 Nov 15 14:56 .
+drwxr-xr-x 3 user user         80 Nov 15 14:56 ..
+-rw-r--r-- 1 user user   24626280 Nov 15 14:56 arclengths.f64
+-rw-r--r-- 1 user user 1207445100 Nov 15 14:56 coordinates.i32
+-rw-r--r-- 1 user user    3078285 Nov 15 14:56 family_codes.i8
+-rw-r--r-- 1 user user         64 Nov 15 14:56 header.bin
+-rw-r--r-- 1 user user        218 Nov 15 14:56 metadata.json
+-rw-r--r-- 1 user user   24626288 Nov 15 14:56 offsets.i64
+-rw-r--r-- 1 user user   24626280 Nov 15 14:56 source_ids.u64
+-rw-r--r-- 1 user user   24626280 Nov 15 14:56 tortuosities.f64
+-rw-r--r-- 1 user user   24626280 Nov 15 14:56 z_bounds.i32
+--- size check, script's copy against the fetched files:
+arclengths.f64 fetched 24626280 script 24626280 OK
+coordinates.i32 fetched 1207445100 script 1207445100 OK
+family_codes.i8 fetched 3078285 script 3078285 OK
+header.bin fetched 64 script 64 OK
+metadata.json fetched 218 script 218 OK
+offsets.i64 fetched 24626288 script 24626288 OK
+source_ids.u64 fetched 24626280 script 24626280 OK
+tortuosities.f64 fetched 24626280 script 24626280 OK
+z_bounds.i32 fetched 24626280 script 24626280 OK
+REAL_TEST_DONE fetch_rc=0 sha_bad=0 erwin_rc=99
