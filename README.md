@@ -36,6 +36,10 @@ Per scroll you get the track store in the format the villa fitter reads (nine fl
 
 Track files per scroll (store, source store, crossings cache and logs together): 2.34 GB for PHerc. 1218, 2.85 GB for 1203, 2.94 GB for 1545 and 4.01 GB for 0846B, 12.1 GB in all; see `MANIFEST.md`. Each single file is under GitHub's 2 GiB release-asset limit, so no file has to be split.
 
+### Correction, 2026-11-21: scale in the fitted and snapped meshes' meta.json
+
+The `meta.json` files of the fitted meshes (`fit/.../meshes/fitted_*`) and the snapped windings (`snap/w069`-`w071`) inside the four `*_proof_fit-flat-mesh-snap.zip` archives say `"scale": [0.05, 0.05]`, which means one grid step is 20 voxels. The real node spacing of those meshes is 23 to 31 voxels, depending on the scroll (PHerc. 1218 `snap/w070`: 29.3 x 30.6). Their `area_vx2` and `area_cm2` were computed from the wrong step, so they are too small. The mesh coordinates themselves (`x/y/z.tif`) are correct. The release asset `meta-fix-2026-11-21.zip` holds the 972 corrected `meta.json` files at the same paths: unzip it over the extracted archives. The flattened windings, the renders, the ink maps and every number in this README are not affected. Thanks to rekoj4715 on the Vesuvius Challenge Discord for spotting it.
+
 ## How the tracks were made
 
 With the villa project's own track extractor (`extract_surface_tracks`, then `convert_track_store` and `build_track_crossings`), run unchanged on the public m7 surface prediction of each scroll, with the parameters used for the published PHerc. 0358 tracks: downsample factor 2, z chunk depth 2 and stride 8, yx chunk thickness 4 and stride 16, dust threshold 400, max area threshold 640,000, path mode `interjoint`. We ran it on a laptop (4 worker processes, CPU only, WSL Ubuntu), 1.1 to 1.9 hours per scroll. No GPU and no paid compute was used for the tracks.

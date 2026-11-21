@@ -87,3 +87,4 @@ The nine files of each scroll's track store are published as `<scroll>__vctracks
 | `PHerc1545_proof_render-w069.zip` | 531,303,676 | `0f06156dd3ba8bf2f211015fab77cb1cb2c53d031e33c1814b62a2b859e2203b` | PHerc1545 31-layer render of winding w069 |
 | `PHerc1545_proof_render-w070.zip` | 540,034,992 | `4ebe8ad9851af7988e59e05a1df6886f22651d95bf2446bed96f2fe15066d3fb` | PHerc1545 31-layer render of winding w070 |
 | `PHerc1545_proof_render-w071.zip` | 551,566,818 | `1f8832e9f7240b1d56ad627622ed4ee599116bb1e8f63f1bbc173c4ac1274a78` | PHerc1545 31-layer render of winding w071 |
+| `meta-fix-2026-11-21.zip` | 815,132 | `5c7f3ae2513eb66486d485bc9ea4d8c8e851fc526adc138567663d5c869b958d` | Correction: 972 meta.json files of the fitted and snapped meshes with the true scale and area (see README) |
