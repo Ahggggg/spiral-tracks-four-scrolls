@@ -1,0 +1,15 @@
+--- a/mesh/snap_meshes.py
++++ b/mesh/snap_meshes.py
+@@ -108,9 +108,9 @@
+ import multiprocessing as mp
+ NP = max(1, a.procs)
+ groups = [list(range(i, len(uniq), NP)) for i in range(NP)]
+-with mp.get_context('fork').Pool(NP) as pool:
+-    for res in pool.imap_unordered(work, groups):
+-        for idx, v in res: vals[idx] = v
++# Windows edit: Windows has no 'fork'; the chunk groups are sampled serially in this process (same values, only slower)
++for res in map(work, groups):
++    for idx, v in res: vals[idx] = v
+ vals[~inb] = 0
+ print(f'sampled {len(uniq)} chunks in {time.time()-t0:.0f}s ({NP} procs)', flush=True)
+ 

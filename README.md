@@ -40,6 +40,10 @@ Track files per scroll (store, source store, crossings cache and logs together):
 
 The `meta.json` files of the fitted meshes (`fit/.../meshes/fitted_*`) and the snapped windings (`snap/w069`-`w071`) inside the four `*_proof_fit-flat-mesh-snap.zip` archives say `"scale": [0.05, 0.05]`, which means one grid step is 20 voxels. The real node spacing of those meshes is 23 to 31 voxels, depending on the scroll (PHerc. 1218 `snap/w070`: 29.3 x 30.6). Their `area_vx2` and `area_cm2` were computed from the wrong step, so they are too small. The mesh coordinates themselves (`x/y/z.tif`) are correct. The release asset `meta-fix-2026-11-21.zip` holds the 972 corrected `meta.json` files at the same paths: unzip it over the extracted archives. The flattened windings, the renders, the ink maps and every number in this README are not affected. Thanks to rekoj4715 on the Vesuvius Challenge Discord for spotting it.
 
+### More windings (added 2026-11-21)
+
+The fit archives hold all 120 fitted windings of each scroll, but only three were snapped and flattened in v1. `more-windings/HOWTO.md` says how the rest are made (snap with Erwin Nieuwlaar's `snap_meshes.py`, flatten with villa's Lasagna), with the settings we used. Snapped and flattened meshes of further windings are attached to the release as `*_more-windings_snap-mesh*.zip`; they unzip into the same folders as the v1 archives. No renders or ink maps are in those archives.
+
 ## How the tracks were made
 
 With the villa project's own track extractor (`extract_surface_tracks`, then `convert_track_store` and `build_track_crossings`), run unchanged on the public m7 surface prediction of each scroll, with the parameters used for the published PHerc. 0358 tracks: downsample factor 2, z chunk depth 2 and stride 8, yx chunk thickness 4 and stride 16, dust threshold 400, max area threshold 640,000, path mode `interjoint`. We ran it on a laptop (4 worker processes, CPU only, WSL Ubuntu), 1.1 to 1.9 hours per scroll. No GPU and no paid compute was used for the tracks.
@@ -114,6 +118,7 @@ A few small files in the fit archives mention short codes such as `X-153`, `C-01
 - **Vesuvius Challenge** and the ESRF: the scans, the m7 surface predictions, Lasagna normals and the open-data bucket.
 - **villa** (`ScrollPrize/villa`, MIT): the track extractor, the spiral fitter and the renderer.
 - **Alexey Drobkov** (`AlexeyDrobkovStrikesBack/herculaneum-umbilici`, MIT): the umbilicus annotations for PHerc. 1203, 1218 and 1545.
+- **Erwin Nieuwlaar** (`Nieuwlaar/pherc343-first-letters`, MIT): the PHerc. 343 recipe, and in particular `mesh/snap_meshes.py`, the script that snaps fitted windings onto the surface prediction. Every snapped winding in this release was made with it.
 - **The PHerc. 0306B winners, Liam Warner and Nicola Bodill** (`SirProdigle/pherc0306b-first-letters`): the screening recipe and scripts we followed, built on Erwin Nieuwlaar's PHerc. 343 recipe.
 - **ivanmikhnenkov**: the merged fixes to the winners' data step (tracks download checks) and lane scripts that this route relies on.
 - **domenicor046**: Reader V3.
