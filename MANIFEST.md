@@ -1,6 +1,6 @@
 # Manifest
 
-Every file attached to release `v1` (77 files, 19,793,019,766 bytes = 18.43 GiB), with its size and SHA-256.
+Every file attached to release `v1` (80 files, 19,958,568,058 bytes = 18.59 GiB), with its size and SHA-256.
 The same sums are in `SHA256SUMS.txt` (`sha256sum -c SHA256SUMS.txt` in the folder you downloaded into).
 
 Download base: `https://github.com/Ahggggg/spiral-tracks-four-scrolls/releases/download/v1/<file>`
@@ -88,3 +88,5 @@ The nine files of each scroll's track store are published as `<scroll>__vctracks
 | `PHerc1545_proof_render-w070.zip` | 540,034,992 | `4ebe8ad9851af7988e59e05a1df6886f22651d95bf2446bed96f2fe15066d3fb` | PHerc1545 31-layer render of winding w070 |
 | `PHerc1545_proof_render-w071.zip` | 551,566,818 | `1f8832e9f7240b1d56ad627622ed4ee599116bb1e8f63f1bbc173c4ac1274a78` | PHerc1545 31-layer render of winding w071 |
 | `meta-fix-2026-11-21.zip` | 815,132 | `5c7f3ae2513eb66486d485bc9ea4d8c8e851fc526adc138567663d5c869b958d` | Correction: 972 meta.json files of the fitted and snapped meshes with the true scale and area (see README) |
+| `PHerc1218_more-windings_snap-mesh.zip` | 82,070,313 | `408ac96b0a7b4eaee54014f9e8b607844a547499099ae88f0f9661af52aed6e3` | PHerc. 1218: the other 117 windings (w010-w129 except w069-w071), snapped (`snap/`, corrected meta.json) and flattened (`mesh/`), with the snap report; no renders (see `more-windings/HOWTO.md`) |
+| `PHerc1545_more-windings_snap-mesh.zip` | 82,662,847 | `d8edeb016b5d2922b1651443756e1befa42fa8b9052c7cd793ccacae067e04bd` | PHerc. 1545: the other 117 windings (w010-w129 except w069-w071), snapped (`snap/`, corrected meta.json) and flattened (`mesh/`), with the snap report; no renders (see `more-windings/HOWTO.md`) |
