@@ -66,5 +66,5 @@ The flattened winding is the `flatten.tifxyz` folder under the output directory,
 
 ## What we did not check
 
-- Only windings 069 to 071 were rendered and looked at closely by us on 1203 and 0846B. The extra windings of 1545 and 1218 were snapped and flattened by the same two steps; their snap reports are in the archives. On PHerc. 1545 the outermost windings snap less well than the middle ones: the share of points with a predicted sheet nearby is 0.92 to 0.94 in the middle (w040 to w099) and falls as low as 0.40 beyond w100.
+- Only windings 069 to 071 were rendered and looked at closely by us on 1203 and 0846B. The extra windings of 1545 and 1218 were snapped and flattened by the same two steps; their snap reports are in the archives. The outer windings snap much less well than the middle ones, so check the report before using one. On PHerc. 1545 the share of points with a predicted sheet nearby is 0.92 to 0.94 in the middle (w040 to w099) and falls as low as 0.40 beyond w100. On PHerc. 1218 it is 0.87 to 0.95 from w015 to w094, drops from w095 on, and is only 0.20 to 0.52 from w099 to w129: those outer windings are in the archive for completeness, but fewer than half of their points found a sheet.
 - We have not compared these windings with an independent reconstruction.
